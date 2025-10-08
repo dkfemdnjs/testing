@@ -18,6 +18,10 @@
     </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <audio id="birthday-music" loop>
+        <source src="https://www.chosic.com/wp-content/uploads/2021/07/Happy-Birthday-Music-Box.mp3" type="audio/mpeg">
+        브라우저가 오디오 태그를 지원하지 않습니다.
+    </audio>
 
     <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden my-8">
         
@@ -98,7 +102,18 @@
 
         </div>
     </div>
-
+<script>
+        // 페이지의 아무 곳이나 처음 클릭했을 때 음악을 재생하기 위한 설정
+        document.body.addEventListener('click', function () {
+            const music = document.getElementById('birthday-music');
+            // isPlaying 변수로 한 번만 실행되도록 제어
+            if (!this.isPlaying) {
+                music.play();
+                this.isPlaying = true; // 재생 상태로 변경
+            }
+        }, { once: true }); // 이 이벤트는 한 번만 실행됩니다.
+    </script>
 </body>
 </html>
+
 
