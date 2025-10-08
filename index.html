@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조서율의 첫 번째 생일에 초대합니다</title>
+    <!-- Tailwind CSS 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Noto Sans KR) 로드 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Noto Sans KR 폰트를 기본 폰트로 설정 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden my-8">
+        
+        <!-- 1. 메인 이미지 섹션 -->
+        <!-- 'src' 부분에 아기 사진 URL을 넣어주세요. -->
+        <img class="w-full h-auto object-cover" src="https://placehold.co/600x750/FFF0F5/333333?text=Lovely+Baby" alt="아기 사진">
+
+        <div class="p-8 text-center">
+            
+            <!-- 초대 문구 -->
+            <p class="text-gray-600 text-lg mb-2">사랑스러운 OOO의</p>
+            <h1 class="text-3xl font-bold text-pink-500 mb-4">첫 번째 생일파티</h1>
+            <p class="text-gray-800 mb-6">
+                사랑과 축복 속에서 자라난 조서율이<br>
+                어느덧 첫 생일을 맞았습니다.<br>
+                귀한 걸음 하시어 자리를 빛내주시길 바랍니다.
+            </p>
+
+            <!-- 날짜 및 시간 -->
+            <div class="bg-pink-50 rounded-lg p-4 mb-8">
+                <p class="text-xl font-semibold text-gray-800">2025년 11월 22일 토요일</p>
+                <p class="text-lg text-gray-700">오후 5시</p>
+            </div>
+
+            <!-- 2. 부모님 연락처 섹션 -->
+            <div class="border-t border-b border-gray-200 py-6 my-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">부모에게 연락하기</h2>
+                <div class="flex justify-center space-x-8">
+                    <!-- 아빠 연락처 -->
+                    <div class="text-center">
+                        <p class="text-gray-600">아빠</p>
+                        <!-- 아빠 성함을 수정해주세요 -->
+                        <p class="font-semibold text-lg text-gray-900 mb-2">조중호</p>
+                        <div class="flex space-x-3 justify-center">
+                            <!-- 전화번호를 수정해주세요 (tel: 뒤에도 동일하게) -->
+                            <a href="tel:010-7106-5801" class="bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-green-600 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.034 11.034 0 006.364 6.364l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C6.477 18 2 13.523 2 8V5a1 1 0 011-1h-1z" /></svg>
+                            </a>
+                            <!-- 문자번호를 수정해주세요 (sms: 뒤에도 동일하게) -->
+                            <a href="sms:010-7106-5801" class="bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5a3 3 0 00-3-3H5a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V5zm-2 4h-2v2a1 1 0 11-2 0V9H8a1 1 0 110-2h2V5a1 1 0 112 0v2h2a1 1 0 110 2z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 엄마 연락처 -->
+                    <div class="text-center">
+                        <p class="text-gray-600">엄마</p>
+                        <!-- 엄마 성함을 수정해주세요 -->
+                        <p class="font-semibold text-lg text-gray-900 mb-2">윤준영</p>
+                        <div class="flex space-x-3 justify-center">
+                             <!-- 전화번호를 수정해주세요 (tel: 뒤에도 동일하게) -->
+                            <a href="tel:010-7556-8086" class="bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-green-600 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.034 11.034 0 006.364 6.364l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C6.477 18 2 13.523 2 8V5a1 1 0 011-1h-1z" /></svg>
+                            </a>
+                            <!-- 문자번호를 수정해주세요 (sms: 뒤에도 동일하게) -->
+                            <a href="sms:010-7556-8086" class="bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5a3 3 0 00-3-3H5a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V5zm-2 4h-2v2a1 1 0 11-2 0V9H8a1 1 0 110-2h2V5a1 1 0 112 0v2h2a1 1 0 110 2z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. 장소 안내 섹션 -->
+            <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-4">오시는 길</h2>
+                <!-- 행사장 이름을 수정해주세요 -->
+                <p class="text-lg font-semibold text-gray-900">요장가</p>
+                <!-- 행사장 주소를 수정해주세요 -->
+                <p class="text-gray-600 mt-1 mb-4">
+                    경남 창원시 마산합포구 진동면 주도1길 64-13
+                </p>
+                <!-- 'href' 부분에 카카오맵 또는 네이버지도 URL을 넣어주세요 -->
+                <a href="https://naver.me/FG7if1oR" target="_blank" class="inline-block bg-yellow-400 text-gray-800 font-bold py-2 px-5 rounded-full hover:bg-yellow-500 transition shadow-md">
+                    지도 보기
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
